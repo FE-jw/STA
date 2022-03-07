@@ -1,12 +1,12 @@
 # STA(Scroll Trigger Animation) [demo](https://fe-jw.github.io/STA)
 
 ## Property
-1. Default: 기본 설정
+1. data-sta: 기본 설정
 	```html
 	<div data-sta></div>
 	```
 
-2. Delay: 애니메이션 시작 지연
+2. data-sta-delay: 애니메이션 시작 지연
 	```html
 	<div data-sta data-sta-delay="300">
 	```
