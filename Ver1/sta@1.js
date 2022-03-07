@@ -1,5 +1,5 @@
 /*!
-	* Version: 1.0.0
+	* Version: 1
 	* Web: https://fe-jw.github.io/STA
 	* Github: https://github.com/FE-jw/STA
 	* Published: 2022-03-06

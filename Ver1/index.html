@@ -9,92 +9,100 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/fe-jw.github.io/css/font.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/css/highlight-material-11.4.0.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css">
-<link rel="stylesheet" href="../css/style.min.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 <div class="sta-wrap">
 	<header class="header">
-		<h1 class="main-tit" data-sta>
-			<strong class="point">STA</strong>
-			<span class="name">Scroll Trigger Animation</span>
-			<span class="ver">Ver 1</span>
-		</h1>
-		<p class="main-desc">
-			<span class="desc">
-				<span data-sta data-sta-delay="700">가볍다!</span>
-				<span data-sta data-sta-delay="500">빠르다!</span>
-				<span data-sta data-sta-delay="900">쉽다!</span>
-			</span>
-			<span class="desc point" data-sta data-sta-delay="1000">Vanilla JS + CSS</span>
-			<span class="desc" data-sta data-sta-delay="1200">스크롤 트리거 애니메이션 플러그인</span>
-		</p>
+		<div class="header-wrap">
+			<h1 class="main-tit" data-sta>
+				<strong class="point">STA</strong>
+				<span class="name">Scroll Trigger Animation</span>
+				<span class="ver">Ver 1</span>
+			</h1>
+			<p class="main-desc">
+				<span class="desc">
+					<span data-sta data-sta-delay="700">가볍다!</span>
+					<span data-sta data-sta-delay="500">빠르다!</span>
+					<span data-sta data-sta-delay="900">쉽다!</span>
+				</span>
+				<span class="desc point" data-sta data-sta-delay="1000">Vanilla JS + CSS</span>
+				<span class="desc" data-sta data-sta-delay="1200">스크롤 트리거 애니메이션 플러그인</span>
+			</p>
+		</div>
 	</header>
 	<div class="container">
 		<section class="section">
-			<h2 class="sub-tit" data-sta>Default</h2>
-			<p class="sub-desc" data-sta>요소에 data-sta 속성만 추가하면 기본 효과 적용 끝!<br>이 외에 dataset 추가 설정으로 손쉽게 인터랙티브한 웹을 구현할 수 있습니다.</p>
 			<div class="content">
-				<div class="item-1" data-sta>
-					<pre><code class="html">&lt;div data-sta&gt;&lt;/div&gt;</code></pre>
+				<h2 class="sub-tit" data-sta>Default</h2>
+				<p class="sub-desc" data-sta>요소에 data-sta 속성만 추가하면 기본 효과<small class="point">(bottom to top)</small> 적용 끝!<br>이 외에 dataset 추가 설정으로 손쉽게 인터랙티브한 웹을 구현할 수 있습니다.</p>
+				<div class="code-list">
+					<div class="item-1" data-sta>
+						<pre><code class="html">&lt;div data-sta&gt;&lt;/div&gt;</code></pre>
+					</div>
+					<div class="item-2" data-sta>
+						<pre><code class="html">&lt;ul&gt;
+	&lt;li data-sta&gt;&lt;/li&gt;
+	&lt;li data-sta&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section">
-			<h2 class="sub-tit" data-sta>Delay</h2>
-			<p class="sub-desc" data-sta>data-sta-delay 속성으로<br>애니메이션 시작을 지연시킬 수 있습니다.</p>
 			<div class="content">
-				<div class="item-1" data-sta data-sta-delay="300">
-					<pre><code class="html">
-&lt;div data-sta
-	data-sta-delay="300"&gt;
-					</code></pre>
-				</div>
-				<div class="item-2" data-sta data-sta-delay="700">
-					<pre><code class="html">
-&lt;div data-sta
-	data-sta-delay="700"&gt;
-					</code></pre>
-				</div>
-				<div class="item-3" data-sta data-sta-delay="500">
-					<pre><code class="html">
-&lt;div data-sta
-	data-sta-delay="500"&gt;
-					</code></pre>
+				<h2 class="sub-tit" data-sta>Delay</h2>
+				<p class="sub-desc" data-sta>data-sta-delay 속성으로<br>애니메이션 시작을 지연시킬 수 있습니다.</p>
+				<div class="code-list">
+					<div class="item-1" data-sta data-sta-delay="300">
+						<pre><code class="html">&lt;div data-sta
+	data-sta-delay="300"&gt;</code></pre>
+					</div>
+					<div class="item-2" data-sta data-sta-delay="500">
+						<pre><code class="html">&lt;div data-sta
+	data-sta-delay="500"&gt;</code></pre>
+					</div>
+					<div class="item-3" data-sta data-sta-delay="700">
+						<pre><code class="html">&lt;div data-sta
+	data-sta-delay="700"&gt;</code></pre>
+					</div>
 				</div>
 			</div>
 		</section>
 		<div class="section start">
-			<h2 class="sub-tit">Get Started</h2>
-			<ol class="how-to-start">
-				<li>
-					<h3 class="step-tit">Add Markup</h3>
-					<div class="code-wrap">
-						<pre><code class="html">&lt;div data-sta&gt;&lt;/div&gt;</code></pre>
-					</div>
-				</li>
-				<li>
-					<h3 class="step-tit">Add CSS</h3>
-					<div class="code-wrap">
-						<pre><code class="html">&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css</a>"&gt;</code></pre>
-					</div>
-				</li>
-				<li>
-					<h3 class="step-tit">Add JS</h3>
-					<div class="code-wrap">
-						<pre><code class="html">&lt;script src="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js</a>"&gt;&lt;/script&gt;</code></pre>
-					</div>
-				</li>
-				<li>
-					<h3 class="step-tit">Initialize</h3>
-					<div class="code-wrap">
-						<pre><code class="javscript">window.addEventListener('load', function(){
+			<div class="content">
+				<h2 class="sub-tit" data-sta>Get Started</h2>
+				<ol class="how-to-start" data-sta>
+					<li>
+						<h3 class="step-tit">Add Markup</h3>
+						<div class="code-wrap">
+							<pre><code class="html">&lt;div data-sta&gt;&lt;/div&gt;</code></pre>
+						</div>
+					</li>
+					<li>
+						<h3 class="step-tit">Add CSS</h3>
+						<div class="code-wrap">
+							<pre><code class="html">&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css</a>"&gt;</code></pre>
+						</div>
+					</li>
+					<li>
+						<h3 class="step-tit">Add JS</h3>
+						<div class="code-wrap">
+							<pre><code class="html">&lt;script src="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js</a>"&gt;&lt;/script&gt;</code></pre>
+						</div>
+					</li>
+					<li>
+						<h3 class="step-tit">Initialize</h3>
+						<div class="code-wrap">
+							<pre><code class="javscript">window.addEventListener('load', function(){
 	document.querySelectorAll('[data-sta]').STA();
 });</code></pre>
-					</div>
-				</li>
-			</ol>
-			<a href="https://github.com/FE-jw/STA" class="link-default arrow" target="_blank">View on Github</a>
+						</div>
+					</li>
+				</ol>
+				<a href="https://github.com/FE-jw/STA" class="link-default arrow" target="_blank" data-sta>View on Github</a>
+			</div>
 		</div>
 	</div>
 	<footer class="footer">
@@ -110,6 +118,7 @@ hljs.initHighlightingOnLoad();
 window.addEventListener('load', function(){
 	//Loading
 	setTimeout(function(){
+		window.scrollTo(0, 0);
 		document.body.classList.add('onLoad');
 		document.querySelectorAll('[data-sta]').STA();
 	}, 500);
@@ -125,7 +134,7 @@ document.querySelector('.btn-top').addEventListener('click', function(){
 window.addEventListener('scroll', function(){
 	var headerHeight = document.querySelector('.header').offsetHeight;
 
-	if(window.scrollY >  headerHeight){
+	if(window.scrollY > headerHeight){
 		document.querySelector('.btn-top').classList.add('on');
 	}else{
 		document.querySelector('.btn-top').classList.remove('on');
