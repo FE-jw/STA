@@ -8,7 +8,7 @@
 
 2. data-sta-delay: 애니메이션 시작 지연
 	```html
-	<div data-sta data-sta-delay="300">
+	<div data-sta data-sta-delay="300"></div>
 	```
 
 ## Get Started
@@ -35,9 +35,9 @@
 	```
 
 ## 용량(min 기준)
-||css|js|
-|------|:---:|:---:|
-|용량|339byte|1.08kb|
+|Ver|css|js|
+|:------:|:---:|:---:|
+|1|340byte|967byte|
 
 ## History
-- 220306 Version 1 beta 업로드
+- 220306 [Ver 1](https://fe-jw.github.io/STA/Ver1) beta 업로드

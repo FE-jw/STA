@@ -1,6 +1,6 @@
 /*!
 	* Version: 1
-	* Web: https://fe-jw.github.io/STA
+	* Web: https://fe-jw.github.io/STA/Ver1
 	* Github: https://github.com/FE-jw/STA
 	* Published: 2022-03-06
 */
@@ -19,12 +19,6 @@ NodeList.prototype.STA = function(){
 
 			//Settings
 			if(!e.classList.contains('sta-complete')){
-				//Duration
-				if(e.dataset.staDuration){
-					e.style.webkitTransitionDuration = e.dataset.staDuration / 1000 + 's';
-					e.style.transitionDuration = e.dataset.staDuration / 1000 + 's';
-				}
-
 				//Trigger Active
 				if(window.scrollY + window.innerHeight >= eleTrigger && window.scrollY < eleBottom){
 					if(!e.classList.contains('sta-trigger')){
