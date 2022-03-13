@@ -53,22 +53,22 @@
 		<section class="section">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Delay</h2>
-				<p class="sub-desc" data-sta>data-sta-delay 속성으로<br>애니메이션 시작을 지연시킬 수 있습니다.</p>
+				<p class="sub-desc" data-sta>data-sta-delay 속성으로<br>애니메이션 트리거를 지연시킬 수 있습니다.</p>
 				<div class="code-list">
-					<div class="item-1" data-sta data-sta-delay="300">
+					<div class="item-1" data-sta data-sta-delay="100">
+						<pre><code class="html">&lt;div
+	data-sta
+	data-sta-delay="100"&gt;</code></pre>
+					</div>
+					<div class="item-2" data-sta data-sta-delay="300">
 						<pre><code class="html">&lt;div
 	data-sta
 	data-sta-delay="300"&gt;</code></pre>
 					</div>
-					<div class="item-2" data-sta data-sta-delay="500">
+					<div class="item-3" data-sta data-sta-delay="500">
 						<pre><code class="html">&lt;div
 	data-sta
 	data-sta-delay="500"&gt;</code></pre>
-					</div>
-					<div class="item-3" data-sta data-sta-delay="700">
-						<pre><code class="html">&lt;div
-	data-sta
-	data-sta-delay="700"&gt;</code></pre>
 					</div>
 				</div>
 			</div>
@@ -86,19 +86,22 @@
 					<li data-sta>
 						<h3 class="step-tit">Add CSS</h3>
 						<div class="code-wrap">
-							<pre><code class="html">&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css</a>"&gt;</code></pre>
+							<pre><code class="html">&lt;!-- I recommend adding it to your CDN --&gt;
+&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css</a>"&gt;</code></pre>
 						</div>
 					</li>
 					<li data-sta>
 						<h3 class="step-tit">Add JS</h3>
 						<div class="code-wrap">
-							<pre><code class="html">&lt;script src="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js</a>"&gt;&lt;/script&gt;</code></pre>
+							<pre><code class="html">&lt;!-- I recommend adding it to your CDN --&gt;
+&lt;script src="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js</a>"&gt;&lt;/script&gt;</code></pre>
 						</div>
 					</li>
 					<li data-sta>
 						<h3 class="step-tit">Initialize</h3>
 						<div class="code-wrap">
-							<pre><code class="javscript">window.addEventListener('load', function(){
+							<pre><code class="javscript">//You have to initialize after the window load
+window.addEventListener('load', function(){
 	document.querySelectorAll('[data-sta]').STA();
 });</code></pre>
 						</div>

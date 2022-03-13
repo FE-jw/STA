@@ -6,7 +6,7 @@
 	<div data-sta></div>
 	```
 
-2. data-sta-delay: 애니메이션 시작 지연
+2. data-sta-delay: 애니메이션 트리거 지연
 	```html
 	<div data-sta data-sta-delay="300"></div>
 	```
@@ -19,16 +19,19 @@
 
 2. Add CSS
 	```html
+	<!-- I recommend adding it to your CDN -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css">
 	```
 
 3. Add JS
 	```html
+	<!-- I recommend adding it to your CDN -->
 	<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js"></script>
 	```
 
 4. Initialize
 	```javascript
+	//You have to initialize after the window load
 	window.addEventListener('load', function(){
 		document.querySelectorAll('[data-sta]').STA();
 	});
@@ -37,7 +40,7 @@
 ## 용량(min 기준)
 |Ver|css|js|
 |:------:|:---:|:---:|
-|1|340byte|967byte|
+|1|344byte|967byte|
 
 ## History
 - 220306 [Ver 1](https://fe-jw.github.io/STA/Ver1) beta 업로드
