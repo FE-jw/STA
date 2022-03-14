@@ -19,13 +19,13 @@
 
 2. Add CSS
 	```html
-	<!-- I recommend adding it to your CDN -->
+	<!-- Don't add my CDN in your project. I recommend adding it to your CDN -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.css">
 	```
 
 3. Add JS
 	```html
-	<!-- I recommend adding it to your CDN -->
+	<!-- Don't add my CDN in your project. I recommend adding it to your CDN -->
 	<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1/sta@1.min.js"></script>
 	```
 
