@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*!
+	* Version: 1
+	* Web: https://fe-jw.github.io/STA/Ver1.1
+	* Github: https://github.com/FE-jw/STA
+	* Published: 
+*/
+
+[data-sta]	{opacity:0;transform:translate(0, 50px);transition-property:opacity, transform;transition-duration:1s;}
+[data-sta].sta-trigger,
+[data-sta].sta-complete	{opacity:1;transform:translate(0, 0);}
