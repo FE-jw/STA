@@ -8,8 +8,7 @@
 
 2. data-sta-delay: 애니메이션 트리거 지연
 	```html
-	<div data-sta
-	data-sta-delay="300">
+	<div data-sta data-sta-delay="300">
 	```
 
 ## Get Started
