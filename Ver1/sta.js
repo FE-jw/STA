@@ -2,7 +2,7 @@
 	* Version: 1
 	* Web: https://fe-jw.github.io/STA/Ver1
 	* Github: https://github.com/FE-jw/STA
-	* Published: 2022-03-06
+	* Released: 2022-03-06
 */
 
 NodeList.prototype.STA = function(){
