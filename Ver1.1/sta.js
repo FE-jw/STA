@@ -1,8 +1,8 @@
 /*!
-	* Version: 1
+	* Version: 1.1
 	* Web: https://fe-jw.github.io/STA/Ver1.1
 	* Github: https://github.com/FE-jw/STA
-	* Published: 
+	* Released: 2022-03-25
 */
 
 NodeList.prototype.STA = function(){
@@ -13,12 +13,17 @@ NodeList.prototype.STA = function(){
 	var eleAni = this;
 	var onInit = function(){
 		eleAni.forEach(function(e, idx){
-			var eleTop = window.scrollY + e.getBoundingClientRect().top;
-			var eleBottom = eleTop + e.offsetHeight;
-			var eleTrigger = eleTop + (e.offsetHeight * 0.8);
-
 			//Settings
 			if(!e.classList.contains('sta-complete')){
+				var eleTop = window.scrollY + e.getBoundingClientRect().top;
+				var eleBottom = eleTop + e.offsetHeight;
+				var eleTrigger = eleTop + (e.offsetHeight * 0.8);
+
+				//Duration 있는 경우
+				if(e.dataset.staDuration && e.style.transitionDuration == ''){
+					e.style.transitionDuration = e.dataset.staDuration / 1000 + 's';
+				}
+
 				//Trigger Active
 				if(window.scrollY + window.innerHeight >= eleTrigger && window.scrollY < eleBottom){
 					if(!e.classList.contains('sta-trigger')){
@@ -47,11 +52,6 @@ NodeList.prototype.STA = function(){
 
 	onInit();
 
-	window.addEventListener('resize', function(){
-		onInit();
-	});
-
-	window.addEventListener('scroll', function(){
-		onInit();
-	});
-}
+	window.addEventListener('resize', onInit);
+	window.addEventListener('scroll', onInit);
+};
