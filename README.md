@@ -32,13 +32,13 @@
 2. Add CSS
 	```html
 	<!-- Don't add my CDN in your project. I recommend adding it to your CDN -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.1/sta.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.2/sta.min.css">
 	```
 
 3. Add JS
 	```html
 	<!-- Don't add my CDN in your project. I recommend adding it to your CDN -->
-	<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.1/sta.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.2/sta.min.js"></script>
 	```
 
 4. Initialize
