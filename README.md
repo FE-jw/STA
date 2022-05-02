@@ -20,7 +20,7 @@
 
 4. data-sta-offset: 트리거 포인트 설정(기본값 0.8)
 	```html
-	<div data-sta data-sta-duration="0.5"></div>
+	<div data-sta data-sta-offset="0.5"></div>
 	```
 
 ## **Get Started**
