@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*! Author: JW 2022-03-06. Edit: 2022-05-01. */
+/*! Author: JW 2022-03-06. Edit: 2022-05-20 */
 *	{margin:0;padding:0;}
 html	{font-size:10px;-webkit-text-size-adjust:none;}
 body	{line-height:1.2;font-family:'Roboto-Regular','NanumSquareR',sans-serif;font-size:2rem;color:#fff;background-color:#000;}
@@ -17,7 +17,7 @@ body .container,body .footer,body .header	{visibility:hidden;}
 body.onLoad:after	{visibility:hidden;animation:none;}
 body.onLoad .sta-wrap:before	{opacity:0.4;transition:opacity 1s ease;}
 body.onLoad .container,body.onLoad .footer,body.onLoad .header	{visibility:initial;}
-.sta-wrap	{min-width:360px;}
+.sta-wrap	{overflow:hidden;min-width:360px;}
 .sta-wrap:before	{content:'';opacity:0.2;width:100vw;height:100vh;position:fixed;left:0;top:0;background:url('https://cdn.jsdelivr.net/gh/fe-jw/STA/img/bg_sta.jpg') repeat 50% 50%;background-size:960px auto;z-index:-10;}
 .sta-wrap .point	{color:#fff01e;}
 .sta-wrap .link-default	{display:flex;justify-content:center;align-items:center;width:160px;height:45px;margin:0 auto;padding:0 10px;border-width:1px;border-style:solid;border-color:#fff;font-family:'Roboto-Light','NanumSquareL',sans-serif;font-size:1.5rem;text-align:center;background-color:rgba(255,255,255,0.1);transition:all 0.5s ease;box-sizing:border-box;}
