@@ -28,6 +28,7 @@
 	* ttb: top to bottom
 	* ltr: left to right
 	* rtl: right to left
+
 	```html
 	<div data-sta data-sta-direction="ltr"></div>
 	```
