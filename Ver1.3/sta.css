@@ -7,8 +7,8 @@
 	* Released: 2022-05-20
 */
 
-[data-sta]	{opacity:0;transform:translate(0, 60px);transition-property:opacity, transform;transition-duration:1s;}
+[data-sta]	{opacity:0;transform:translate(0, 60px);}
 [data-sta][data-sta-direction='ttb']	{transform:translate(0, -60px);}
 [data-sta][data-sta-direction='ltr']	{transform:translate(-60px, 0);}
 [data-sta][data-sta-direction='rtl']	{transform:translate(60px, 0);}
-[data-sta].sta-trigger	{opacity:1;transform:translate(0, 0);}
+[data-sta].sta-trigger	{opacity:1;transform:translate(0, 0);transition-property:opacity, transform;transition-duration:1s;}
