@@ -29,7 +29,9 @@ NodeList.prototype.STA = function(options){
 					if(e.dataset.staDelay){
 						//Delay 있는 경우
 						setTimeout(function(){
-							e.classList.add('sta-trigger');
+							if(!e.classList.contains('sta-trigger')){
+								e.classList.add('sta-trigger');
+							}
 						}, e.dataset.staDelay);
 					}else{
 						//Delay 없는 경우
