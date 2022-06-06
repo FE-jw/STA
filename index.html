@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no">
-<title>STA Ver 1.3</title>
+<title>STA Ver 1.4</title>
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/img/favicon.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/fe-jw.github.io/css/font.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/css/highlight-material-11.4.0.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.3/sta.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/css/style.min.css">
 </head>
 
@@ -19,16 +19,16 @@
 			<h1 class="main-tit" data-sta data-sta-direction="ttb">
 				<strong class="point">STA</strong>
 				<span class="name">Scroll Trigger Animation</span>
-				<span class="ver">Ver 1.3</span>
+				<span class="ver">Ver 1.4</span>
 			</h1>
 			<p class="main-desc">
 				<span class="desc">
-					<span data-sta data-sta-delay="700">가볍다!</span>
-					<span data-sta data-sta-delay="500">빠르다!</span>
-					<span data-sta data-sta-delay="900">쉽다!</span>
+					<span data-sta data-sta-delay="700">More Light!</span>
+					<span data-sta data-sta-delay="500">More Fast!</span>
+					<span data-sta data-sta-delay="900">More Easy!</span>
 				</span>
 				<span class="desc point" data-sta data-sta-delay="1000">Vanilla JS + CSS</span>
-				<span class="desc" data-sta data-sta-delay="1200">스크롤 트리거 애니메이션 플러그인</span>
+				<span class="desc" data-sta data-sta-delay="1200">Scroll Trigger Animation Plugin</span>
 			</p>
 		</div>
 	</header>
@@ -36,7 +36,7 @@
 		<section class="section">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Default</h2>
-				<p class="sub-desc" data-sta>요소에 data-sta 속성만 추가하면 <br data-break-1>기본 효과<small class="point">(bottom to top)</small> 적용 끝!<br>이 외에 dataset 추가 설정으로 <br data-break-1>손쉽게 인터랙티브한 웹을 구현할 수 있습니다.</p>
+				<p class="sub-desc" data-sta>Just add the <span class="point">data-sta</span> attribute to the element <br data-break-1>and you're done with the bottom to top!<br>In addition, you can easily implement the interactive web <br data-break-1>with additional dataset settings.</p>
 				<div class="code-list">
 					<div class="item-1" data-sta>
 						<pre><code class="html">&lt;div data-sta&gt;&lt;/div&gt;</code></pre>
@@ -53,7 +53,7 @@
 		<section class="section">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Delay</h2>
-				<p class="sub-desc" data-sta>data-sta-delay 속성으로 <br data-break-1>애니메이션 트리거를 지연시킬 수 있습니다.<br>단위는 ms 입니다.</p>
+				<p class="sub-desc" data-sta>You can delay animation trigger activation <br data-break-1>by adding the <span class="point">data-sta-delay</span> attribute.<br>The unit is ms.</p>
 				<div class="code-list">
 					<div class="item-1" data-sta data-sta-delay="100">
 						<pre><code class="html">&lt;div
@@ -76,7 +76,7 @@
 		<section class="section">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Duration</h2>
-				<p class="sub-desc" data-sta>data-sta-duration 속성으로 <br data-break-1>애니메이션 시간을 설정할 수 있습니다.<br>기본값은 <span class="point">1000ms</span> 입니다.</p>
+				<p class="sub-desc" data-sta>You can set the animation time <br data-break-1>by adding the <span class="point">data-sta-duration</span> attribute.<br>The default is 1000 ms.</p>
 				<div class="code-list">
 					<div class="item-1" data-sta data-sta-duration="500">
 						<pre><code class="html">&lt;div
@@ -99,7 +99,7 @@
 		<section class="section">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Offset</h2>
-				<p class="sub-desc" data-sta>data-sta-offset 속성으로 <br data-break-1>트리거 포인트를 설정할 수 있습니다.<br>1은 100%를 의미합니다.<br>즉 요소 높이의 전체가 노출됐을 때 트리거가 발생합니다.<br>기본값은 <span class="point">0.8(80%)</span> 입니다.</p>
+				<p class="sub-desc" data-sta>You can set the trigger point <br data-break-1>by adding the <span class="point">data-sta-offset</span> attribute.<br>1 means 100%.<br>In other words, the trigger is activated <br data-break-1>when the entire element height is exposed.<br>The default is 0.8 (80%).</p>
 				<div class="code-list">
 					<div class="item-1" data-sta data-sta-offset="0.1">
 						<pre><code class="html">&lt;div
@@ -122,7 +122,7 @@
 		<section class="section">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Direction</h2>
-				<p class="sub-desc" data-sta>data-sta-direction 속성으로 <br data-break-1>애니메이션의 방향을 설정할 수 있습니다.<br>설정값은 <span class="point">ttb</span><small>(top to bottom)</small>, <span class="point">ltr</span><small>(left to right)</small>, <br data-break-1><span class="point">rtl</span><small>(right to left)</small> 이며<br>기본값은 <span class="point">btt</span><small>(bottom to top)</small> 입니다.</p>
+				<p class="sub-desc" data-sta>You can set the direction of the animation <br data-break-1>by adding the <span class="point">data-sta-direction</span> attribute.<br>The settings are <span class="point">ttb</span> (top to bottom), <span class="point">ltr</span> (left to right), <br data-break-1>and <span class="point">rtl</span> (right to left)<br>The default is <span class="point">btt</span> (bottom to top).</p>
 				<div class="code-list">
 					<div class="item-1" data-sta data-sta-direction="ttb">
 						<pre><code class="html">&lt;div
@@ -145,6 +145,20 @@
 				</div>
 			</div>
 		</section>
+		<section class="section">
+			<div class="content">
+				<h2 class="sub-tit" data-sta>Repeat</h2>
+				<p class="sub-desc" data-sta>You can decide whether to repeat the animation <br data-break-1>by setting the <span class="point">repeatEffect</span> option.<br>Applies to this page.<br>Please scroll up to the top and come back down.<br><small class="point">(This option is not recommended <br data-break-1>because it requires repeated calculations.)</small></p>
+				<div class="code-list">
+					<div class="item-1" data-sta>
+						<pre><code class="javascript">
+document.querySelectorAll('[data-sta]').STA({
+	repeatEffect: true
+});</code></pre>
+					</div>
+				</div>
+			</div>
+		</section>
 		<div class="section start">
 			<div class="content">
 				<h2 class="sub-tit" data-sta>Get Started</h2>
@@ -159,20 +173,20 @@
 						<h3 class="step-tit">Add CSS</h3>
 						<div class="code-wrap">
 							<pre><code class="html">&lt;!-- Don't add my CDN in your project. I recommend adding it to your CDN --&gt;
-&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.3/sta.min.css" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.3/sta.min.css</a>"&gt;</code></pre>
+&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.css" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.css</a>"&gt;</code></pre>
 						</div>
 					</li>
 					<li data-sta>
 						<h3 class="step-tit">Add JS</h3>
 						<div class="code-wrap">
 							<pre><code class="html">&lt;!-- Don't add my CDN in your project. I recommend adding it to your CDN --&gt;
-&lt;script src="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.3/sta.min.js" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.3/sta.min.js</a>"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="<a href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.js" target="_blank">https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.js</a>"&gt;&lt;/script&gt;</code></pre>
 						</div>
 					</li>
 					<li data-sta>
 						<h3 class="step-tit">Initialize</h3>
 						<div class="code-wrap">
-							<pre><code class="javscript">//You have to initialize after the window load
+							<pre><code class="javascript">//You have to initialize after the window load
 window.addEventListener('load', function(){
 	document.querySelectorAll('[data-sta]').STA();
 });</code></pre>
@@ -186,10 +200,10 @@ window.addEventListener('load', function(){
 	<footer class="footer">
 		<address class="copyright">&copy; JW</address>
 	</footer>
-	<button type="button" class="btn-top" title="페이지 상단으로 이동">페이지 상단으로 이동</button>
+	<button type="button" class="btn-top" title="scroll up to the top">scroll up to the top</button>
 </div>
 <script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/js/highlight-8.7.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.3/sta.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
 	
@@ -198,7 +212,9 @@ window.addEventListener('load', function(){
 	setTimeout(function(){
 		window.scrollTo(0, 0);
 		document.body.classList.add('onLoad');
-		document.querySelectorAll('[data-sta]').STA();
+		document.querySelectorAll('[data-sta]').STA({
+			repeatEffect: true
+		});
 	}, 500);
 });
 

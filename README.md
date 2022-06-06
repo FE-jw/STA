@@ -1,6 +1,6 @@
 [![](https://cdn.jsdelivr.net/gh/fe-jw/STA/img/sta_logo.jpg)](https://fe-jw.github.io/STA)
 
-# **STA(Scroll Trigger Animation)<br>[Ver 1.3 Demo](https://fe-jw.github.io/STA)**
+# **STA(Scroll Trigger Animation)<br>[Ver 1.4 Demo](https://fe-jw.github.io/STA)**
 
 ## **Property**
 * **data-sta**: default setting
@@ -18,19 +18,27 @@
 	<div data-sta data-sta-duration="2000"></div>
 	```
 
-* **data-sta-offset**: set the trigger point _(The default is 0.8, which means 80% of the element height. You can also set a negative value)_
+* **data-sta-offset**: set the trigger point _(The default is 0.8, which means 80% of the element height. You can't set a negative value)_
 	```html
 	<div data-sta data-sta-offset="0.5"></div>
 	```
 
-* **data-sta-direction**: set the direction of the animation(The default is btt)
-	* btt: bottom to top
+* **data-sta-direction**: set the direction of the animation
+	* btt: bottom to top _(default)_
 	* ttb: top to bottom
 	* ltr: left to right
 	* rtl: right to left
+
 	```html
 	<div data-sta data-sta-direction="ltr"></div>
 	```
+
+## **Options**
+```javascript
+document.querySelectorAll('[data-sta]').STA({
+	repeatEffect: true //decide whether to repeat the animation (The default is false.This option is not recommended)
+});
+```
 
 ## **Get Started**
 1. Add Markup
@@ -61,12 +69,14 @@
 ## **Amazing Size(min)**
 |Ver|css|js|
 |:------:|:---:|:---:|
+|1.4|514byte|1.37kb|
 |1.3|514byte|1.1kb|
 |1.2|347byte|1.05kb|
 |1.1|347byte|1.03kb|
 |1|343byte|966byte|
 
 ## **[History](https://github.com/FE-jw/STA/releases)**
+- 220606 Released [Ver 1.4](https://fe-jw.github.io/STA/Ver1.4)
 - 220520 Released [Ver 1.3](https://fe-jw.github.io/STA/Ver1.3)
 - 220501 Released [Ver 1.2](https://fe-jw.github.io/STA/Ver1.2)
 - 220325 Released [Ver 1.1](https://fe-jw.github.io/STA/Ver1.1)

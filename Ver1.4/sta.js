@@ -1,8 +1,8 @@
-/*!
-	* Version: 1.4
-	* Web: https://fe-jw.github.io/STA/Ver1.4
-	* Github: https://github.com/FE-jw/STA
-	* Released: 2022-##-##
+/**
+ * Version: 1.4
+ * Web: https://fe-jw.github.io/STA/Ver1.4
+ * Github: https://github.com/FE-jw/STA
+ * Released: 2022-06-06
 */
 
 NodeList.prototype.STA = function(options){
@@ -10,22 +10,22 @@ NodeList.prototype.STA = function(options){
 		NodeList.prototype.forEach = Array.prototype.forEach;
 	}
 
-	var eleAni = this;
+	var ele_ani = this;
 	var onInit = function(){
-		eleAni.forEach(function(e){
+		ele_ani.forEach(function(e){
 			//Settings
 			if(!e.classList.contains('sta-trigger')){
-				var eleTop = window.scrollY + e.getBoundingClientRect().top;
-				var eleBottom = window.scrollY + e.getBoundingClientRect().bottom;
-				var eleTrigger = eleTop + (e.offsetHeight * (e.dataset.staOffset || 0.8));
-
+				var ele_top = window.scrollY + e.getBoundingClientRect().top;
+				var ele_btm = window.scrollY + e.getBoundingClientRect().bottom;
+				var ele_trigger = ele_top + (e.offsetHeight * (e.dataset.staOffset || 0.8));
+	
 				//Duration 있는 경우
 				if(e.dataset.staDuration && e.style.transitionDuration == ''){
 					e.style.transitionDuration = e.dataset.staDuration / 1000 + 's';
 				}
-
+	
 				//Trigger Active
-				if(window.scrollY + window.innerHeight >= eleTrigger && window.scrollY < eleBottom){
+				if(window.scrollY + window.innerHeight >= ele_trigger && window.scrollY < ele_btm){
 					if(e.dataset.staDelay){
 						//Delay 있는 경우
 						setTimeout(function(){
@@ -55,9 +55,14 @@ NodeList.prototype.STA = function(options){
 	window.addEventListener('scroll', function(){
 		onInit();
 
+		//repeat
 		if(options.repeatEffect){
-			eleAni.forEach(function(e){
-				if(window.scrollY + window.innerHeight < window.scrollY + e.getBoundingClientRect().top || window.scrollY > window.scrollY + e.getBoundingClientRect().bottom){
+			ele_ani.forEach(function(e){
+				if(e.classList.contains('sta-trigger') && window.scrollY + window.innerHeight <= window.scrollY + e.getBoundingClientRect().top){
+					if(e.dataset.staDuration){
+						e.style.removeProperty('transition-duration');
+					}
+					
 					e.classList.remove('sta-trigger', 'sta-complete');
 				}
 			});
