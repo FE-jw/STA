@@ -56,7 +56,7 @@ NodeList.prototype.STA = function(options){
 		onInit();
 
 		//repeat
-		if(options.repeatEffect){
+		if(options && options.repeatEffect){
 			ele_ani.forEach(function(e){
 				if(e.classList.contains('sta-trigger') && window.scrollY + window.innerHeight <= window.scrollY + e.getBoundingClientRect().top){
 					if(e.dataset.staDuration){
