@@ -1,8 +1,8 @@
 /**
- * Version: 1.5
+ * Version: 1.5.1
  * Web: https://fe-jw.github.io/STA/Ver1.5
  * Github: https://github.com/FE-jw/STA
- * Released: 2022-11-21
+ * Released: 2022-11-22
 */
 
 NodeList.prototype.STA = function(options){
@@ -11,8 +11,13 @@ NodeList.prototype.STA = function(options){
 	}
 
 	var settings = {
-		repeatEffect: typeof options.repeatEffect != 'undefined' ? options.repeatEffect : false,
-		defaultOffset: typeof options.defaultOffset != 'undefined' ? options.defaultOffset : 0.5
+		repeatEffect: false,
+		defaultOffset: 0.5
+	}
+
+	if(options){
+		settings.repeatEffect = typeof options.repeatEffect != 'undefined' ? options.repeatEffect : settings.repeatEffect;
+		settings.defaultOffset = typeof options.defaultOffset != 'undefined' ? options.defaultOffset : settings.defaultOffset;
 	}
 
 	var ele_ani = this;
