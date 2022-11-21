@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*! Author: JW 2022-03-06. Edit: 2022-11-14 */
+/*! Author: JW 2022-03-06. Edit: 2022-11-21 */
 $font: 'Roboto-Regular', 'NanumSquareR', sans-serif;
 $font-light: 'Roboto-Light', 'NanumSquareL', sans-serif;
 $font-bold: 'Roboto-Bold', 'NanumSquareExtraBold', sans-serif;
@@ -19,7 +19,7 @@ button	{line-height:inherit;font-family:inherit;font-size:inherit;color:inherit;
 table	{font-family:inherit;border-collapse:collapse;table-layout:fixed;}
 li, dd	{list-style:none;}
 code	{font-family:Consolas, sans-serif;tab-size:6;}
-::-webkit-scrollbar	{width:10px;height:2px;background-color:rgba(255, 255, 255, 0.05);}
+::-webkit-scrollbar	{width:10px;height:4px;background-color:rgba(255, 255, 255, 0.05);}
 ::-webkit-scrollbar-thumb	{border-radius:50em;background-color:$symbol-color;}
 pre	{min-width:0;padding:10px 0;overflow-x:auto;}
 pre code.hljs	{overflow-x:visible;}
@@ -51,7 +51,7 @@ body	{
 		&.arrow:hover:after	{opacity:1;width:10px;height:10px;margin-left:5px;}
 	}
 
-	.header	{display:flex;justify-content:center;align-items:center;text-align:center;height:100vh;min-height:600px;box-sizing:border-box;
+	.header	{display:flex;justify-content:center;align-items:center;text-align:center;min-height:100vh;padding:40px 0;box-sizing:border-box;
 		.main-tit	{padding:10px 20px;position:relative;border-width:1px;border-style:solid;border-color:$symbol-color;color:#fff;background-color:rgba(0, 0, 0, 0.5);}
 		.main-tit .point	{display:block;font-size:5.0rem;}
 		.main-tit .name	{display:block;font-size:2.8rem;}
@@ -62,8 +62,8 @@ body	{
 	}
 
 	.container	{
-		.section	{display:table;table-layout:fixed;width:100%;height:100vh;min-height:800px;padding:10px 0;box-sizing:border-box;}
-		.section .content	{display:table-cell;vertical-align:middle;}
+		.section	{display:flex;justify-content:center;align-items:center;width:100%;min-height:100vh;padding:20px 0;box-sizing:border-box;}
+		.section .content	{display:block;width:100%;}
 		.section .sub-tit	{margin-bottom:10px;padding:0 10px;font-size:50px;color:$symbol-color;text-align:center;text-decoration:underline;}
 		.section .sub-desc	{margin-bottom:20px;padding:0 10px;line-height:calc(20 / 16);font-family:$font-light;font-size:1.6rem;text-align:center;}
 		.how-to-start	{width:95%;margin:0 auto;padding-top:20px;}
@@ -72,7 +72,7 @@ body	{
 		.how-to-start .step-tit:before	{content:'· ';color:$symbol-color;}
 		.how-to-start .code-wrap	{padding:20px;border-width:1px;border-style:solid;border-color:$symbol-color;font-size:1.2rem;background-color:rgba(0, 0, 0, 0.5);box-sizing:border-box;}
 		.code-list	{display:flex;justify-content:center;flex-wrap:wrap;width:100%;}
-		.code-list [class^='item-']	{display:flex;align-items:center;min-width:100px;min-height:100px;margin:10px;padding:0 10px;border-width:1px;border-style:solid;border-color:$symbol-color;font-size:1.2rem;background-color:rgba(0, 0, 0, 0.5);box-sizing:border-box;}
+		.code-list [class^='item-']	{display:flex;align-items:center;min-width:100px;min-height:100px;margin:10px;padding:10px;border-width:1px;border-style:solid;border-color:$symbol-color;font-size:1.2rem;background-color:rgba(0, 0, 0, 0.5);box-sizing:border-box;}
 	}
 
 	.footer	{padding:40px 0 20px;
@@ -92,7 +92,7 @@ body	{
 			&.arrow:hover:after	{width:12px;height:12px;margin-left:10px;}
 		}
 
-		.header	{min-height:800px;
+		.header	{
 			.main-tit	{padding:15px 30px;border-width:2px;}
 			.main-tit .point	{font-size:8.0rem;}
 			.main-tit .name	{font-size:4.0rem;}
@@ -125,7 +125,7 @@ body	{
 			&.arrow:hover:after	{width:20px;height:20px;margin-left:10px;}
 		}
 
-		.header	{width:1440px;margin:0 auto;min-height:800px;
+		.header	{width:1440px;margin:0 auto;padding:60px 0;
 			.main-tit	{padding:20px 40px;border-width:2px;}
 			.main-tit .point	{font-size:12.0rem;}
 			.main-tit .name	{font-size:6.0rem;}
@@ -134,14 +134,13 @@ body	{
 		}
 
 		.container	{width:1440px;margin:0 auto;
-			.section	{min-height:1000px;padding:20px 0;}
 			.section .sub-tit	{margin-bottom:30px;padding:0 20px;font-size:8.0rem;}
 			.section .sub-desc	{margin-bottom:50px;padding:0 20px;line-height:calc(36 / 30);font-size:3.0rem;}
 			.how-to-start	{width:1000px;}
 			.how-to-start li	{margin-bottom:40px;}
 			.how-to-start .step-tit	{font-size:3.0rem;}
 			.how-to-start .code-wrap	{font-size:2.0rem;}
-			.code-list [class^='item-']	{min-width:300px;max-width:1000px;min-height:300px;padding:0 20px;border-width:2px;font-size:2.0rem;}
+			.code-list [class^='item-']	{min-width:300px;max-width:1000px;min-height:300px;padding:20px;border-width:2px;font-size:2.0rem;}
 		}
 
 		.footer	{padding:60px 0 30px;

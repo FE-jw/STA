@@ -70,7 +70,7 @@ document.querySelectorAll('[data-sta]').STA({
 ## **Amazing Size(min)**
 |Ver|css|js|
 |:------:|:---:|:---:|
-|1.5|###byte|###kb|
+|1.5|495byte|1.5kb|
 |1.4|514byte|1.37kb|
 |1.3|514byte|1.1kb|
 |1.2|347byte|1.05kb|
@@ -78,7 +78,7 @@ document.querySelectorAll('[data-sta]').STA({
 |1|343byte|966byte|
 
 ## **[History](https://github.com/FE-jw/STA/releases)**
-- 22#### Released [Ver 1.5](https://fe-jw.github.io/STA/Ver1.5)
+- 221121 Released [Ver 1.5](https://fe-jw.github.io/STA/Ver1.5)
 - 220606 Released [Ver 1.4](https://fe-jw.github.io/STA/Ver1.4)
 - 220520 Released [Ver 1.3](https://fe-jw.github.io/STA/Ver1.3)
 - 220501 Released [Ver 1.2](https://fe-jw.github.io/STA/Ver1.2)

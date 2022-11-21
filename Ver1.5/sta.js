@@ -2,7 +2,7 @@
  * Version: 1.5
  * Web: https://fe-jw.github.io/STA/Ver1.5
  * Github: https://github.com/FE-jw/STA
- * Released: 2022-##-##
+ * Released: 2022-11-21
 */
 
 NodeList.prototype.STA = function(options){
@@ -10,11 +10,9 @@ NodeList.prototype.STA = function(options){
 		NodeList.prototype.forEach = Array.prototype.forEach;
 	}
 
-	// console.log(options.repeatEffect);
-
 	var settings = {
-		repeatEffect: typeof options != 'undefined' ? options.repeatEffect : false,
-		defaultOffset: typeof options != 'undefined' ? options.defaultOffset : 0.5
+		repeatEffect: typeof options.repeatEffect != 'undefined' ? options.repeatEffect : false,
+		defaultOffset: typeof options.defaultOffset != 'undefined' ? options.defaultOffset : 0.5
 	}
 
 	var ele_ani = this;
@@ -24,7 +22,6 @@ NodeList.prototype.STA = function(options){
 			if(!e.classList.contains('sta-trigger')){
 				var ele_top = window.scrollY + e.getBoundingClientRect().top;
 				var ele_btm = window.scrollY + e.getBoundingClientRect().bottom;
-				// console.log(options.options);
 				var ele_trigger = ele_top + (e.offsetHeight * (e.dataset.staOffset || settings.defaultOffset));
 	
 				//Duration 있는 경우

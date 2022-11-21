@@ -8,10 +8,8 @@
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/img/favicon.ico">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/fe-jw.github.io/css/font.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/css/highlight-material-11.4.0.min.css">
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.5/sta.min.css"> -->
-<link rel="stylesheet" href="sta.css">
-<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/css/style.min.css"> -->
-<link rel="stylesheet" href="../css/style.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.5/sta.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fe-jw/STA/css/style.min.css">
 </head>
 
 <body>
@@ -153,8 +151,7 @@
 				<p class="sub-desc" data-sta>These are not required, just optional.</p>
 				<div class="code-list">
 					<div class="item-1" data-sta>
-						<pre><code class="javascript">
-document.querySelectorAll('[data-sta]').STA({
+						<pre><code class="javascript">document.querySelectorAll('[data-sta]').STA({
 	//Optional
 	repeatEffect: true,	//decide whether to repeat the animation (The default is false. This option is not recommended)
 	defaultOffset: 0.3	//the trigger is activated when the element height is exposed. It has a lower priority than the individual setting (data-sta-offset).
@@ -207,8 +204,7 @@ window.addEventListener('load', function(){
 	<button type="button" class="btn-top" title="scroll up to the top">scroll up to the top</button>
 </div>
 <script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/js/highlight-8.7.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.4/sta.min.js"></script> -->
-<script src="sta.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fe-jw/STA/Ver1.5/sta.min.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
 	
@@ -217,7 +213,9 @@ window.addEventListener('load', function(){
 	setTimeout(function(){
 		window.scrollTo(0, 0);
 		document.body.classList.add('onLoad');
-		document.querySelectorAll('[data-sta]').STA();
+		document.querySelectorAll('[data-sta]').STA({
+			defaultOffset: 0.3
+		});
 	}, 500);
 });
 
