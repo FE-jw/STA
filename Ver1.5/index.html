@@ -213,7 +213,9 @@ window.addEventListener('load', function(){
 	setTimeout(function(){
 		window.scrollTo(0, 0);
 		document.body.classList.add('onLoad');
-		document.querySelectorAll('[data-sta]').STA();
+		document.querySelectorAll('[data-sta]').STA({
+			defaultOffset: 0.3
+		});
 	}, 500);
 });
 

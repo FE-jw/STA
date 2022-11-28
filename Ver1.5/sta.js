@@ -2,7 +2,7 @@
  * Version: 1.5.1
  * Web: https://fe-jw.github.io/STA/Ver1.5
  * Github: https://github.com/FE-jw/STA
- * Released: 2022-11-22
+ * Released: 2022-11-28
 */
 
 NodeList.prototype.STA = function(options){

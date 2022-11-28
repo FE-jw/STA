@@ -68,17 +68,18 @@ document.querySelectorAll('[data-sta]').STA({
 	```
 
 ## **Change Log**
-- 221122 (v1.5.1)
-	- Fix: resolving errors that occur when options are not specified
-- 221121 (v1.5)
-	- [Ver 1.5](https://fe-jw.github.io/STA/Ver1.5)
-- 220606 (v1.4)
-	- [Ver 1.4](https://fe-jw.github.io/STA/Ver1.4)
-- 220520 (v1.3)
-	- [Ver 1.3](https://fe-jw.github.io/STA/Ver1.3)
-- 220501 (v1.2)
-	- [Ver 1.2](https://fe-jw.github.io/STA/Ver1.2)
-- 220325 (v1.1)
-	- [Ver 1.1](https://fe-jw.github.io/STA/Ver1.1)
-- 220306 (v1)
-	- [Ver 1](https://fe-jw.github.io/STA/Ver1)
+- 221128 v1.5.1
+	- Bug Fix
+		- resolving errors that occur when options are not specified
+- 221121 v1.5
+	- Released [Ver 1.5](https://fe-jw.github.io/STA/Ver1.5)
+- 220606 v1.4
+	- Released [Ver 1.4](https://fe-jw.github.io/STA/Ver1.4)
+- 220520 v1.3
+	- Released [Ver 1.3](https://fe-jw.github.io/STA/Ver1.3)
+- 220501 v1.2
+	- Released [Ver 1.2](https://fe-jw.github.io/STA/Ver1.2)
+- 220325 v1.1
+	- Released [Ver 1.1](https://fe-jw.github.io/STA/Ver1.1)
+- 220306 v1
+	- Released [Ver 1](https://fe-jw.github.io/STA/Ver1)
