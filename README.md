@@ -67,20 +67,19 @@ document.querySelectorAll('[data-sta]').STA({
 	});
 	```
 
-## **Amazing Size(min)**
-|Ver|css|js|
-|:------:|:---:|:---:|
-|1.5|495byte|1.5kb|
-|1.4|514byte|1.37kb|
-|1.3|514byte|1.1kb|
-|1.2|347byte|1.05kb|
-|1.1|347byte|1.03kb|
-|1|343byte|966byte|
-
-## **[History](https://github.com/FE-jw/STA/releases)**
-- 221121 Released [Ver 1.5](https://fe-jw.github.io/STA/Ver1.5)
-- 220606 Released [Ver 1.4](https://fe-jw.github.io/STA/Ver1.4)
-- 220520 Released [Ver 1.3](https://fe-jw.github.io/STA/Ver1.3)
-- 220501 Released [Ver 1.2](https://fe-jw.github.io/STA/Ver1.2)
-- 220325 Released [Ver 1.1](https://fe-jw.github.io/STA/Ver1.1)
-- 220306 Released [Ver 1](https://fe-jw.github.io/STA/Ver1)
+## **Change Log**
+- 221128 v1.5.1
+	- Bug Fix
+		- resolving errors that occur when options are not specified
+- 221121 v1.5
+	- Released [Ver 1.5](https://fe-jw.github.io/STA/Ver1.5)
+- 220606 v1.4
+	- Released [Ver 1.4](https://fe-jw.github.io/STA/Ver1.4)
+- 220520 v1.3
+	- Released [Ver 1.3](https://fe-jw.github.io/STA/Ver1.3)
+- 220501 v1.2
+	- Released [Ver 1.2](https://fe-jw.github.io/STA/Ver1.2)
+- 220325 v1.1
+	- Released [Ver 1.1](https://fe-jw.github.io/STA/Ver1.1)
+- 220306 v1
+	- Released [Ver 1](https://fe-jw.github.io/STA/Ver1)
